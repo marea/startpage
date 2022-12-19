@@ -1,0 +1,101 @@
+/* Start flavours */
+:root {
+	--base00: #1C2023;
+	--base01: #393F45;
+	--base02: #565E65;
+	--base03: #747C84;
+	--base04: #ADB3BA;
+	--base05: #C7CCD1;
+	--base06: #DFE2E5;
+	--base07: #F3F4F5;
+	--base08: #C7AE95;
+	--base09: #C7C795;
+	--base0A: #AEC795;
+	--base0B: #95C7AE;
+	--base0C: #95AEC7;
+	--base0D: #AE95C7;
+	--base0E: #C795AE;
+	--base0F: #C79595;
+}
+/* End flavours */
+
+@font-face {
+	font-family: 'Wild Words';
+	src: url('../assets/fonts/wildwordsroman.TTF');
+}
+
+*, *:after, *:before {
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 2rem;
+	font-family: 'Wild Words';
+	margin: 0;
+	padding: 0;
+	background-color: var(--base00);
+	color: var(--base07);
+	animation: colors 10s infinite alternate;
+}
+
+@keyframes colors {
+	0% {
+		background-color: var(--base08);
+	}
+
+	14.29% {
+		background-color: var(--base09);
+	}
+
+	28.58% {
+		background-color: var(--base0A);
+	}
+
+	42.87% {
+		background-color: var(--base0B);
+	}
+
+	57.16% {
+		background-color: var(--base0C);
+	}
+
+	71.45% {
+		background-color: var(--base0D);
+	}
+
+	85.74% {
+		background-color: var(--base0E);
+	}
+
+	100% {
+		background-color: var(--base0F);
+	}
+}
+
+main {
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	margin: 0;
+}
+
+.bg {
+	background-image: url('../assets/background.png');
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -99;
+}
